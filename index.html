@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap"
+        href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
@@ -25,6 +25,10 @@
         .font-poppins {
             font-family: "Poppins", serif;
 
+        }
+
+        .font-adlam-display {
+            font-family: "ADLaM Display", serif;
         }
     </style>
     <script>
@@ -87,11 +91,11 @@
                         </svg>
 
                     </div>
-                    <div class="flex gap-2.5">
+                    <div class="gap-2.5 hidden lg:flex">
                         <a
-                            class="hidden lg:inline btn text-[#111111] bg-white bordder-8 border-[#179800] hover:bg-[#179800] text-xl font-normal font-sora">Login</a>
+                            class="btn text-[#111111] bg-white bordder-8 border-[#179800] hover:bg-[#179800] text-xl font-normal font-sora">Login</a>
                         <a
-                            class="hidden lg:inline btn text-[#111111] bg-white bordder-8 border-[#179800] hover:bg-[#179800] text-xl font-normal font-sora">Register</a>
+                            class="btn text-[#111111] bg-white bordder-8 border-[#179800] hover:bg-[#179800] text-xl font-normal font-sora">Register</a>
                     </div>
                 </div>
             </div>
@@ -176,18 +180,24 @@
         <!-- ====================================
                     Products Part Start
         ======================================-->
-        <!-- <section class="bg-[#EFEBE3] mb-16 py-10">
+        <section class="bg-[#EFEBE3] mb-16 py-10">
             <div class="container mx-auto">
                 <div>
                     <h2 class="font-sora text-4xl text-[#179800] font-semibold pb-5">Popular Products</h2>
                 </div>
-                <div class="grid grid-cols-12">
-                    <div class="col-span-12 lg:col-span-4 grid grid-cols-1">
-                        <h4></h4>
+                <div class="grid grid-cols-12 gap-6">
+                    <div
+                        class="col-span-12 lg:col-span-4 grid grid-cols-1 border-2 bg-gradient-to-b from-[#95e985] to-[#95e985]">
+                        <h4 class="font-adlam-display text-4xl text-[#FFFFFF] font-normal">30% off</h4>
+                        <p class="text-[#111111B3] text-base font-normal font-sora">Discover a world of treats, toys,
+                            and essentials handpicked for </p>
+                        <button
+                            class="font-sora text-xl font-normal text-black bg-white border-2 rounded-xl inline px-5">Buy
+                            Now</button>
                         <img src="images/vegetable-offer.png" alt="">
                     </div>
-                    <div class="col-span-12 lg:col-span-8 grid grid-cols-2 lg:grid-cols-3 gap-4">
-                        <div class="flex items-center bg-white w-64 h-28 rounded-xl p-4 gap-5">
+                    <div class="col-span-12 lg:col-span-8 grid grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6">
+                        <div class="flex items-center bg-white max-w-full max-h-28 rounded-xl p-4 gap-2.5">
                             <div>
                                 <img class="bg-[#EFEBE3]" src="images/onion.png" alt="">
                             </div>
@@ -206,7 +216,83 @@
                                 <h6 class="text-base font-medium font-sora text-[#111111]">$39.99</h6>
                             </div>
                         </div>
-                        <div class="flex items-center bg-white w-64 h-28 rounded-xl p-4 gap-5">
+                        <div class="flex items-center bg-white max-w-full max-h-28 rounded-xl p-4 gap-2.5">
+                            <div>
+                                <img class="bg-[#EFEBE3]" src="images/potato.png" alt="">
+                            </div>
+                            <div>
+                                <div class="flex gap-2.5 items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                        class="size-6 text-[#FFC107]">
+                                        <path fill-rule="evenodd"
+                                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+
+                                    <p class="text-base font-normal font-sora text-[#111111]">4.5</p>
+                                </div>
+                                <h5 class="text-xl font-medium font-sora text-[#111111]">Onion 1 KG</h5>
+                                <h6 class="text-base font-medium font-sora text-[#111111]">$39.99</h6>
+                            </div>
+                        </div>
+                        <div class="flex items-center bg-white max-w-full max-h-28 rounded-xl p-4 gap-2.5">
+                            <div>
+                                <img class="bg-[#EFEBE3]" src="images/tomato.png" alt="">
+                            </div>
+                            <div>
+                                <div class="flex gap-2.5 items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                        class="size-6 text-[#FFC107]">
+                                        <path fill-rule="evenodd"
+                                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+
+                                    <p class="text-base font-normal font-sora text-[#111111]">4.5</p>
+                                </div>
+                                <h5 class="text-xl font-medium font-sora text-[#111111]">Onion 1 KG</h5>
+                                <h6 class="text-base font-medium font-sora text-[#111111]">$39.99</h6>
+                            </div>
+                        </div>
+                        <div class="flex items-center bg-white max-w-full max-h-28 rounded-xl p-4 gap-2.5">
+                            <div>
+                                <img class="bg-[#EFEBE3]" src="images/tomato.png" alt="">
+                            </div>
+                            <div>
+                                <div class="flex gap-2.5 items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                        class="size-6 text-[#FFC107]">
+                                        <path fill-rule="evenodd"
+                                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+
+                                    <p class="text-base font-normal font-sora text-[#111111]">4.5</p>
+                                </div>
+                                <h5 class="text-xl font-medium font-sora text-[#111111]">Onion 1 KG</h5>
+                                <h6 class="text-base font-medium font-sora text-[#111111]">$39.99</h6>
+                            </div>
+                        </div>
+                        <div class="flex items-center bg-white max-w-full max-h-28 rounded-xl p-4 gap-2.5">
+                            <div>
+                                <img class="bg-[#EFEBE3]" src="images/potato.png" alt="">
+                            </div>
+                            <div>
+                                <div class="flex gap-2.5 items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                        class="size-6 text-[#FFC107]">
+                                        <path fill-rule="evenodd"
+                                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+
+                                    <p class="text-base font-normal font-sora text-[#111111]">4.5</p>
+                                </div>
+                                <h5 class="text-xl font-medium font-sora text-[#111111]">Onion 1 KG</h5>
+                                <h6 class="text-base font-medium font-sora text-[#111111]">$39.99</h6>
+                            </div>
+                        </div>
+                        <div class="flex items-center bg-white max-w-full max-h-28 rounded-xl p-4 gap-2.5">
                             <div>
                                 <img class="bg-[#EFEBE3]" src="images/onion.png" alt="">
                             </div>
@@ -225,7 +311,7 @@
                                 <h6 class="text-base font-medium font-sora text-[#111111]">$39.99</h6>
                             </div>
                         </div>
-                        <div class="flex items-center bg-white w-64 h-28 rounded-xl p-4 gap-5">
+                        <div class="flex items-center bg-white max-w-full max-h-28 rounded-xl p-4 gap-2.5">
                             <div>
                                 <img class="bg-[#EFEBE3]" src="images/onion.png" alt="">
                             </div>
@@ -244,9 +330,9 @@
                                 <h6 class="text-base font-medium font-sora text-[#111111]">$39.99</h6>
                             </div>
                         </div>
-                        <div class="flex items-center bg-white w-64 h-28 rounded-xl p-4 gap-5">
+                        <div class="flex items-center bg-white max-w-full max-h-28 rounded-xl p-4 gap-2.5">
                             <div>
-                                <img class="bg-[#EFEBE3]" src="images/onion.png" alt="">
+                                <img class="bg-[#EFEBE3]" src="images/potato.png" alt="">
                             </div>
                             <div>
                                 <div class="flex gap-2.5 items-center">
@@ -263,85 +349,9 @@
                                 <h6 class="text-base font-medium font-sora text-[#111111]">$39.99</h6>
                             </div>
                         </div>
-                        <div class="flex items-center bg-white w-64 h-28 rounded-xl p-4 gap-5">
+                        <div class="lg:flex items-center bg-white max-w-full max-h-28 rounded-xl p-4 gap-2.5 hidden">
                             <div>
-                                <img class="bg-[#EFEBE3]" src="images/onion.png" alt="">
-                            </div>
-                            <div>
-                                <div class="flex gap-2.5 items-center">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                                        class="size-6 text-[#FFC107]">
-                                        <path fill-rule="evenodd"
-                                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                                            clip-rule="evenodd" />
-                                    </svg>
-
-                                    <p class="text-base font-normal font-sora text-[#111111]">4.5</p>
-                                </div>
-                                <h5 class="text-xl font-medium font-sora text-[#111111]">Onion 1 KG</h5>
-                                <h6 class="text-base font-medium font-sora text-[#111111]">$39.99</h6>
-                            </div>
-                        </div>
-                        <div class="flex items-center bg-white w-64 h-28 rounded-xl p-4 gap-5">
-                            <div>
-                                <img class="bg-[#EFEBE3]" src="images/onion.png" alt="">
-                            </div>
-                            <div>
-                                <div class="flex gap-2.5 items-center">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                                        class="size-6 text-[#FFC107]">
-                                        <path fill-rule="evenodd"
-                                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                                            clip-rule="evenodd" />
-                                    </svg>
-
-                                    <p class="text-base font-normal font-sora text-[#111111]">4.5</p>
-                                </div>
-                                <h5 class="text-xl font-medium font-sora text-[#111111]">Onion 1 KG</h5>
-                                <h6 class="text-base font-medium font-sora text-[#111111]">$39.99</h6>
-                            </div>
-                        </div>
-                        <div class="flex items-center bg-white w-64 h-28 rounded-xl p-4 gap-5">
-                            <div>
-                                <img class="bg-[#EFEBE3]" src="images/onion.png" alt="">
-                            </div>
-                            <div>
-                                <div class="flex gap-2.5 items-center">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                                        class="size-6 text-[#FFC107]">
-                                        <path fill-rule="evenodd"
-                                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                                            clip-rule="evenodd" />
-                                    </svg>
-
-                                    <p class="text-base font-normal font-sora text-[#111111]">4.5</p>
-                                </div>
-                                <h5 class="text-xl font-medium font-sora text-[#111111]">Onion 1 KG</h5>
-                                <h6 class="text-base font-medium font-sora text-[#111111]">$39.99</h6>
-                            </div>
-                        </div>
-                        <div class="flex items-center bg-white w-64 h-28 rounded-xl p-4 gap-5">
-                            <div>
-                                <img class="bg-[#EFEBE3]" src="images/onion.png" alt="">
-                            </div>
-                            <div>
-                                <div class="flex gap-2.5 items-center">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                                        class="size-6 text-[#FFC107]">
-                                        <path fill-rule="evenodd"
-                                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                                            clip-rule="evenodd" />
-                                    </svg>
-
-                                    <p class="text-base font-normal font-sora text-[#111111]">4.5</p>
-                                </div>
-                                <h5 class="text-xl font-medium font-sora text-[#111111]">Onion 1 KG</h5>
-                                <h6 class="text-base font-medium font-sora text-[#111111]">$39.99</h6>
-                            </div>
-                        </div>
-                        <div class="flex items-center bg-white w-64 h-28 rounded-xl p-4 gap-5">
-                            <div>
-                                <img class="bg-[#EFEBE3]" src="images/onion.png" alt="">
+                                <img class="bg-[#EFEBE3]" src="images/tomato.png" alt="">
                             </div>
                             <div>
                                 <div class="flex gap-2.5 items-center">
@@ -363,13 +373,17 @@
             </div>
         </section>
 
-        <section>
+        <!-- ====================================
+                    Products Part End
+        ======================================-->
+
+        <section class="container mx-auto">
             <div>
                 <div>
                     Arrival & Offers
                 </div>
                 <div class="grid grid-cols-7 gap-5">
-                    <div class="sm:col-span-4 lg:col-span-4 grid grid-cols-1 bg-[#115414] items-center rounded-xl">
+                    <div class="col-span-7 lg:col-span-4 grid grid-cols-1 bg-[#115414] items-center rounded-xl">
                         <div class="flex">
                             <div class="pl-9">
                                 <img src="images/dawat-logo.png" alt="">
@@ -383,7 +397,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="sm:col-span-7 lg:col-span-3 grid grid-cols-2 bg-[#102861] items-center rounded-xl">
+                    <div class="col-span-7 lg:col-span-3 grid grid-cols-2 bg-[#102861] items-center rounded-xl">
                         <div class="pl-9">
                             <img src="images/india-gate-logo.png" alt="">
                             <h5
@@ -398,11 +412,10 @@
                 </div>
             </div>
         </section>
-        <!-- ====================================
-                    Products Part End
-        ======================================--> -->
 
-        <section class="bg-[#EFEBE3] py-16">
+
+
+        <!-- <section class="bg-[#EFEBE3] py-16">
             <div class="container mx-auto">
                 <h2 class="font-sora text-4xl text-[#179800] font-semibold pb-5">Client Feedback</h2>
             </div>
@@ -415,7 +428,7 @@
                         <p class="font-bold mt-2">Jhankar Mahbub</p>
                         <p class="text-green-600 font-semibold text-sm">Founder & CEO</p>
                     </div>
-                    
+
                 </div>
 
                 <div class="bg-white p-6 rounded-lg shadow-lg flex items-center gap-6">
@@ -423,12 +436,12 @@
                     <div>
                         <p class="text-gray-600">Lorem ipsum ctetur elit, sed do eius mod tempor incididunt ut labore et
                             dolore magna aliqua.</p>
-                            <p class="font-bold mt-2">Jhankar Mahbub</p>
-                            <p class="text-green-600 font-semibold text-sm">Founder & CEO</p>
+                        <p class="font-bold mt-2">Jhankar Mahbub</p>
+                        <p class="text-green-600 font-semibold text-sm">Founder & CEO</p>
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
     </main>
     <footer>
 
