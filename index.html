@@ -49,11 +49,11 @@
         <!-- ====================================
                     Navbar Part Start
         ======================================-->
-        <nav class="container mx-auto">
+        <nav class="container mx-auto border-b border-[#179800] lg:border-hidden">
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
                     <div class="dropdown">
-                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden flex justify-end">
+                        <div tabindex="0" role="button" class="btn btn-ghost hidden">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                                 stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -95,11 +95,17 @@
                         <a
                             class="btn text-[#111111] bg-white bordder-8 border-[#179800] hover:bg-[#179800] text-xl font-normal font-sora">Login</a>
                         <a
-                            class="btn text-[#111111] bg-white bordder-8 border-[#179800] hover:bg-[#179800] text-xl font-normal font-sora">Register</a>
+                            class="btn text-[#111111] bordder-8 bg-[#179800] hover:bg-[#179800] text-xl font-normal font-sora">Register</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-bars flex lg:hidden justify-end text-[#179800]"></i>
                     </div>
                 </div>
             </div>
         </nav>
+        <!-- <div class="bg-red-700 text-white w-2">
+            <hr>
+        </div> -->
         <!-- ====================================
                     Navbar Part End
         ======================================-->
@@ -109,12 +115,12 @@
         ======================================-->
         <section class="text-center mb-16 pt-16 bg-[#EFEBE3]">
             <div class="container mx-auto">
-                <h1 class="animate-bounce font-semibold text-6xl text-[#111111] font-sora">Freshness <span
+                <h1 class="animate-bounce font-semibold text-3xl lg:text-6xl text-[#111111] font-sora">Freshness <span
                         class="text-[#179800]">You
                         Can
                         <br>
                         Count</span> On, Prices You’ll Love!</h1>
-                <p class="text-xl font-normal font-sora text-[#111111] py-8">
+                <p class="text-base lg:text-xl font-normal font-sora text-[#111111] py-8">
                     Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br> staples, we’ve
                     got
                     you
@@ -133,7 +139,7 @@
         ======================================-->
         <section class="container mx-auto mb-16">
             <div>
-                <h2 class="font-sora text-4xl text-[#179800] font-semibold pb-5">Services</h2>
+                <h2 class="font-sora text-2xl lg:text-4xl text-[#179800] font-semibold pb-5">Services</h2>
             </div>
             <div class="grid lg:grid-cols-3 mr-0 gap-6">
                 <div class="card bg-base-100 shadow-xl bg-[#EFEBE3] px-8 pt-8 pb-10 rounded-2xl">
@@ -142,8 +148,8 @@
                             alt="Shoes" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                        <h2 class="card-title text-2xl font-semibold font-sora text-[#111111]">24/7 Services </h2>
-                        <p class="text-xl font-light font-sora text-[#111111]">Providing 24/7 services in a super shop
+                        <h2 class="card-title text-xl lg:text-2xl font-semibold font-sora text-[#111111]">24/7 Services </h2>
+                        <p class="lg:text-xl text-base font-light font-sora text-[#111111]">Providing 24/7 services in a super shop
                             can be a great way to attract more customers and increase sales. Here are some key factors
                             to consider.</p>
                     </div>
@@ -154,8 +160,8 @@
                             alt="Shoes" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                        <h2 class="card-title text-2xl font-semibold font-sora text-[#111111]">Fast Delivery</h2>
-                        <p class="text-xl font-light font-sora text-[#111111]">Offering a fast delivery service in your
+                        <h2 class="card-title text-xl lg:text-2xl font-semibold font-sora text-[#111111]">Fast Delivery</h2>
+                        <p class="lg:text-xl text-base font-light font-sora text-[#111111]">Offering a fast delivery service in your
                             super shop can boost customer satisfaction and increase sales. Here’s how you can implement.
                         </p>
                     </div>
@@ -166,8 +172,8 @@
                             alt="Shoes" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                        <h2 class="card-title text-2xl font-semibold font-sora text-[#111111]">Healthy Products </h2>
-                        <p class="text-xl font-light font-sora text-[#111111]">Stocking healthy products in your super
+                        <h2 class="card-title text-xl lg:text-2xl font-semibold font-sora text-[#111111]">Healthy Products </h2>
+                        <p class="lg:text-xl text-base font-light font-sora text-[#111111]">Stocking healthy products in your super
                             shop can attract health-conscious customers and boost sales. Here’s how to do it
                             effectively.</p>
                     </div>
@@ -183,18 +189,22 @@
         <section class="bg-[#EFEBE3] mb-16 py-10">
             <div class="container mx-auto">
                 <div>
-                    <h2 class="font-sora text-4xl text-[#179800] font-semibold pb-5">Popular Products</h2>
+                    <h2 class="font-sora text-2xl lg:text-4xl text-[#179800] font-semibold pb-5">Popular Products</h2>
                 </div>
                 <div class="grid grid-cols-12 gap-6">
                     <div
-                        class="col-span-12 lg:col-span-4 grid grid-cols-1 border-2 bg-gradient-to-b from-[#95e985] to-[#95e985]">
-                        <h4 class="font-adlam-display text-4xl text-[#FFFFFF] font-normal">30% off</h4>
+                        class="col-span-12 lg:col-span-4 grid grid-cols-1 border-2 bg-gradient-to-b from-[#53db3a] to-[#cdf4c5] pl-6 pt-6">
+                        <h4 class="font-adlam-display text-2xl lg:text-4xl text-[#FFFFFF] font-normal">30% off</h4>
                         <p class="text-[#111111B3] text-base font-normal font-sora">Discover a world of treats, toys,
                             and essentials handpicked for </p>
-                        <button
-                            class="font-sora text-xl font-normal text-black bg-white border-2 rounded-xl inline px-5">Buy
-                            Now</button>
-                        <img src="images/vegetable-offer.png" alt="">
+                        <!-- <button
+                            class="font-sora text-xl font-normal text-black bg-white border-2 rounded-xl inline-block px-5">Buy
+                            Now</button> -->
+                            <a
+                            class="btn bordder-8 w-36 font-sora text-xl font-normal text-black bg-white border-2 rounded-xl">Register</a>
+                            <div class="flex justify-end">
+                                <img src="images/vegetable-offer.png" alt="">
+                            </div>
                     </div>
                     <div class="col-span-12 lg:col-span-8 grid grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6">
                         <div class="flex items-center bg-white max-w-full max-h-28 rounded-xl p-4 gap-2.5">
@@ -210,10 +220,10 @@
                                             clip-rule="evenodd" />
                                     </svg>
 
-                                    <p class="text-base font-normal font-sora text-[#111111]">4.5</p>
+                                    <p class="text-xs lg:text-base font-normal font-sora text-[#111111]">4.5</p>
                                 </div>
-                                <h5 class="text-xl font-medium font-sora text-[#111111]">Onion 1 KG</h5>
-                                <h6 class="text-base font-medium font-sora text-[#111111]">$39.99</h6>
+                                <h5 class="text-sm lg:text-xl font-medium font-sora text-[#111111]">Onion 1 KG</h5>
+                                <h6 class="text-xs lg:text-base font-medium font-sora text-[#111111]">$39.99</h6>
                             </div>
                         </div>
                         <div class="flex items-center bg-white max-w-full max-h-28 rounded-xl p-4 gap-2.5">
@@ -229,10 +239,10 @@
                                             clip-rule="evenodd" />
                                     </svg>
 
-                                    <p class="text-base font-normal font-sora text-[#111111]">4.5</p>
+                                    <p class="text-xs lg:text-base font-normal font-sora text-[#111111]">4.5</p>
                                 </div>
-                                <h5 class="text-xl font-medium font-sora text-[#111111]">Onion 1 KG</h5>
-                                <h6 class="text-base font-medium font-sora text-[#111111]">$39.99</h6>
+                                <h5 class="text-sm lg:text-xl font-medium font-sora text-[#111111]">Onion 1 KG</h5>
+                                <h6 class="text-xs lg:text-base font-medium font-sora text-[#111111]">$39.99</h6>
                             </div>
                         </div>
                         <div class="flex items-center bg-white max-w-full max-h-28 rounded-xl p-4 gap-2.5">
@@ -248,10 +258,10 @@
                                             clip-rule="evenodd" />
                                     </svg>
 
-                                    <p class="text-base font-normal font-sora text-[#111111]">4.5</p>
+                                    <p class="text-xs lg:text-base font-normal font-sora text-[#111111]">4.5</p>
                                 </div>
-                                <h5 class="text-xl font-medium font-sora text-[#111111]">Onion 1 KG</h5>
-                                <h6 class="text-base font-medium font-sora text-[#111111]">$39.99</h6>
+                                <h5 class="text-sm lg:text-xl font-medium font-sora text-[#111111]">Onion 1 KG</h5>
+                                <h6 class="text-xs lg:text-base font-medium font-sora text-[#111111]">$39.99</h6>
                             </div>
                         </div>
                         <div class="flex items-center bg-white max-w-full max-h-28 rounded-xl p-4 gap-2.5">
@@ -267,10 +277,10 @@
                                             clip-rule="evenodd" />
                                     </svg>
 
-                                    <p class="text-base font-normal font-sora text-[#111111]">4.5</p>
+                                    <p class="text-xs lg:text-base font-normal font-sora text-[#111111]">4.5</p>
                                 </div>
-                                <h5 class="text-xl font-medium font-sora text-[#111111]">Onion 1 KG</h5>
-                                <h6 class="text-base font-medium font-sora text-[#111111]">$39.99</h6>
+                                <h5 class="text-sm lg:text-xl font-medium font-sora text-[#111111]">Onion 1 KG</h5>
+                                <h6 class="text-xs lg:text-base font-medium font-sora text-[#111111]">$39.99</h6>
                             </div>
                         </div>
                         <div class="flex items-center bg-white max-w-full max-h-28 rounded-xl p-4 gap-2.5">
@@ -286,10 +296,10 @@
                                             clip-rule="evenodd" />
                                     </svg>
 
-                                    <p class="text-base font-normal font-sora text-[#111111]">4.5</p>
+                                    <p class="text-xs lg:text-base font-normal font-sora text-[#111111]">4.5</p>
                                 </div>
-                                <h5 class="text-xl font-medium font-sora text-[#111111]">Onion 1 KG</h5>
-                                <h6 class="text-base font-medium font-sora text-[#111111]">$39.99</h6>
+                                <h5 class="text-sm lg:text-xl font-medium font-sora text-[#111111]">Onion 1 KG</h5>
+                                <h6 class="text-xs lg:text-base font-medium font-sora text-[#111111]">$39.99</h6>
                             </div>
                         </div>
                         <div class="flex items-center bg-white max-w-full max-h-28 rounded-xl p-4 gap-2.5">
@@ -305,10 +315,10 @@
                                             clip-rule="evenodd" />
                                     </svg>
 
-                                    <p class="text-base font-normal font-sora text-[#111111]">4.5</p>
+                                    <p class="text-xs lg:text-base font-normal font-sora text-[#111111]">4.5</p>
                                 </div>
-                                <h5 class="text-xl font-medium font-sora text-[#111111]">Onion 1 KG</h5>
-                                <h6 class="text-base font-medium font-sora text-[#111111]">$39.99</h6>
+                                <h5 class="text-sm lg:text-xl font-medium font-sora text-[#111111]">Onion 1 KG</h5>
+                                <h6 class="text-xs lg:text-base font-medium font-sora text-[#111111]">$39.99</h6>
                             </div>
                         </div>
                         <div class="flex items-center bg-white max-w-full max-h-28 rounded-xl p-4 gap-2.5">
@@ -324,10 +334,10 @@
                                             clip-rule="evenodd" />
                                     </svg>
 
-                                    <p class="text-base font-normal font-sora text-[#111111]">4.5</p>
+                                    <p class="text-xs lg:text-base font-normal font-sora text-[#111111]">4.5</p>
                                 </div>
-                                <h5 class="text-xl font-medium font-sora text-[#111111]">Onion 1 KG</h5>
-                                <h6 class="text-base font-medium font-sora text-[#111111]">$39.99</h6>
+                                <h5 class="text-sm lg:text-xl font-medium font-sora text-[#111111]">Onion 1 KG</h5>
+                                <h6 class="text-xs lg:text-base font-medium font-sora text-[#111111]">$39.99</h6>
                             </div>
                         </div>
                         <div class="flex items-center bg-white max-w-full max-h-28 rounded-xl p-4 gap-2.5">
@@ -343,10 +353,10 @@
                                             clip-rule="evenodd" />
                                     </svg>
 
-                                    <p class="text-base font-normal font-sora text-[#111111]">4.5</p>
+                                    <p class="text-xs lg:text-base font-normal font-sora text-[#111111]">4.5</p>
                                 </div>
-                                <h5 class="text-xl font-medium font-sora text-[#111111]">Onion 1 KG</h5>
-                                <h6 class="text-base font-medium font-sora text-[#111111]">$39.99</h6>
+                                <h5 class="text-sm lg:text-xl font-medium font-sora text-[#111111]">Onion 1 KG</h5>
+                                <h6 class="text-xs lg:text-base font-medium font-sora text-[#111111]">$39.99</h6>
                             </div>
                         </div>
                         <div class="lg:flex items-center bg-white max-w-full max-h-28 rounded-xl p-4 gap-2.5 hidden">
@@ -362,10 +372,10 @@
                                             clip-rule="evenodd" />
                                     </svg>
 
-                                    <p class="text-base font-normal font-sora text-[#111111]">4.5</p>
+                                    <p class="text-xs lg:text-base font-normal font-sora text-[#111111]">4.5</p>
                                 </div>
-                                <h5 class="text-xl font-medium font-sora text-[#111111]">Onion 1 KG</h5>
-                                <h6 class="text-base font-medium font-sora text-[#111111]">$39.99</h6>
+                                <h5 class="text-sm lg:text-xl font-medium font-sora text-[#111111]">Onion 1 KG</h5>
+                                <h6 class="text-xs lg:text-base font-medium font-sora text-[#111111]">$39.99</h6>
                             </div>
                         </div>
                     </div>
@@ -380,15 +390,15 @@
         <section class="container mx-auto">
             <div>
                 <div>
-                    Arrival & Offers
+                    <h2 class="font-sora text-2xl lg:text-4xl text-[#179800] font-semibold pb-5">Arrival & Offers</h2>
                 </div>
                 <div class="grid grid-cols-7 gap-5">
                     <div class="col-span-7 lg:col-span-4 grid grid-cols-1 bg-[#115414] items-center rounded-xl">
-                        <div class="flex">
-                            <div class="pl-9">
+                        <div class="flex items-center">
+                            <div class="pl-9 grid gap-y-4">
                                 <img src="images/dawat-logo.png" alt="">
                                 <h5
-                                    class="text-2xl font-normal font-poppins text-[#FFFFFF] border-2 rounded-r-xl bg-[#63B76D] border-[#63B76D] inline px-8">
+                                    class="text-2xl font-normal font-poppins text-[#FFFFFF] border-2 rounded-xl bg-[#63B76D] border-[#63B76D] inline px-8">
                                     Cook Exotic Dishes</h5>
                                 <h2 class="text-4xl font-bold font-poppins text-[#FFFFFF]">UP to 20% OFF</h2>
                             </div>
@@ -398,7 +408,7 @@
                         </div>
                     </div>
                     <div class="col-span-7 lg:col-span-3 grid grid-cols-2 bg-[#102861] items-center rounded-xl">
-                        <div class="pl-9">
+                        <div class="pl-9 grid gap-y-4">
                             <img src="images/india-gate-logo.png" alt="">
                             <h5
                                 class="text-2xl font-normal font-poppins text-[#FFFFFF] border-2 rounded-r-xl bg-[#2A4D97] border-[#2A4D97] inline px-8">
@@ -415,16 +425,15 @@
 
 
 
-        <section class="py-36">
+        <section class="pt-24 pb-48">
             <div class="container mx-auto">
-                <h2 class="font-sora text-4xl text-[#179800] font-semibold pb-5">Client Feedback</h2>
+                <h2 class="font-sora text-2xl lg:text-4xl text-[#179800] font-semibold pb-5">Client Feedback</h2>
             </div>
             <div class="container mx-auto grid lg:grid-cols-2 gap-6">
                 <div class="bg-[#EFEBE3] p-6 rounded-lg shadow-lg flex items-center gap-6">
                     <img src="images/client1.png" alt="" class="w-32 h-32 rounded-lg object-cover">
                     <div>
-                        <p class="text-gray-600">Lorem ipsum ctetur elit, sed do eius mod tempor incididunt ut labore et
-                            dolore magna aliqua.</p>
+                        <p class="text-gray-600">I love shopping at [Shop Name]! Their fresh produce is always top-notch, and I can always count on getting high-quality items.</p>
                         <p class="font-bold mt-2">Jhankar Mahbub</p>
                         <p class="text-green-600 font-semibold text-sm">Founder & CEO</p>
                     </div>
@@ -434,8 +443,7 @@
                 <div class="bg-[#EFEBE3] p-6 rounded-lg shadow-lg flex items-center gap-6">
                     <img src="images/client2.png" alt="" class="w-32 h-32 rounded-lg object-cover">
                     <div>
-                        <p class="text-gray-600">Lorem ipsum ctetur elit, sed do eius mod tempor incididunt ut labore et
-                            dolore magna aliqua.</p>
+                        <p class="text-gray-600">The home delivery service is amazing! My groceries arrived fresh and on time. Highly recommended!</p>
                         <p class="font-bold mt-2">Jhankar Mahbub</p>
                         <p class="text-green-600 font-semibold text-sm">Founder & CEO</p>
                     </div>
@@ -445,24 +453,25 @@
     </main>
 
     <footer class="footer bg-[#179800] text-base-content p-10 relative pt-56">
-        <div class="grid lg:grid-cols-2 items-center bg-[#EFEBE3] absolute max-w-screen-lg -top-32 left-1/2 -translate-x-1/2 justify-center">
+        <div class="grid lg:grid-cols-2 items-center bg-[#EFEBE3] absolute max-w-screen-lg -top-32 left-1/2 -translate-x-1/2 justify-center p-5 rounded-xl">
             <div>
                 <img src="images/vegetable-busket.png" alt="">
             </div>
-            <div>
-                <h3>Get Grocery News!</h3>
-                <p>Exclusive training tips, ticks, product deals and more.</p>
-                <input placeholder="Enter email...." type="text" name="" id="">
-                <button class="block">Subscribe</button>
+            <div class="grid gap-y-4">
+                <h3 class="font-sora text-[#111111] text-3xl font-semibold">Get Grocery News!</h3>
+                <p class="font-sora font-normal text-base text-[#111111]">Exclusive training tips, ticks, product deals and more.</p>
+                <input class="w-72 h-10 border-white pl-5 font-sora font-normal text-base text-[#C4C4C4]" placeholder="Enter email...." type="text" name="" id="">
+                <a
+                class="btn text-[#111111] bordder-8 bg-[#179800] hover:bg-[#179800] text-xl font-normal font-sora">Register</a>
             </div>
         </div>
         <aside>
             <img src="images/logo-footer.png" alt="">
-            <p>
+            <p class="font-sora font-normal text-xl text-[#FFFFFFB3]">
                 Discover a world of treats, toys, <br>and essentials handpicked for your furry friends
             </p>
         </aside>
-        <nav>
+        <nav class="font-sora font-normal text-xl text-[#EFEBE3]">
             <h6 class="footer-title">Services</h6>
             <a class="link link-hover">Branding</a>
             <a class="link link-hover">Design</a>
@@ -470,19 +479,19 @@
             <a class="link link-hover">Advertisement</a>
         </nav>
         <nav>
-            <h6 class="footer-title">Social</h6>
+            <h6 class="footer-title font-sora font-medium text-base text-[#EFEBE3]">Follow Us</h6>
             <div class="grid grid-flow-col gap-4">
                 <a>
-                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-facebook text-[#EFEBE3]"></i>
                 </a>
                 <a>
-                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-instagram text-[#EFEBE3]"></i>
                 </a>
                 <a>
-                    <i class="fa-brands fa-linkedin-in"></i>
+                    <i class="fa-brands fa-linkedin-in text-[#EFEBE3]"></i>
                 </a>
                 <a>
-                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-youtube text-[#EFEBE3]"></i>
                 </a>
             </div>
         </nav>
